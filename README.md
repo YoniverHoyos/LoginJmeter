@@ -1,3 +1,15 @@
+Ejercicio 3. Realizar una prueba de carga del servicio de login
+
+Para efectos del ejercicio, se brindará el siguiente CURL:
+
+curl --location --max-time 60 'https://fakestoreapi.com/auth/login' ^
+--header 'Content-Type: application/json' ^
+--data '{
+  "username": "user",
+  "password": "passwd"
+}'
+El objetivo del ejercicio era realizar una prueba de carga en el servicio de login ubicado en "https://fakestoreapi.com/auth/login" pero esto no fue posible por lo que opto por realizar una prueba en una ubicacion de login diferente.
+
 El repositorio contiene un archivo .jmx realizado en Jmeter 5.6.3, al igual que el archivo .csv con la parametizacion de datos necesaria para realizar una prueba de carga del servicio de login ubicado en https://the-internet.herokuapp.com/login
 
 Pasos para la ejecucion del archivo en Jmeter 5.6.3:
