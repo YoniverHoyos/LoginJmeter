@@ -1,0 +1,7 @@
+Conclusiones
+
+1. El objetivo inicial del desafio era realizar una prueba de carga del servicio de login en "https://fakestoreapi.com/auth/login", pero esto no fue posible debido a diversas dificultades, por lo que se opto por realizar la prueba de carga en una dirección diferente, "https://the-internet.herokuapp.com/login". Obteniendo los resultados deseados.
+2. La prueba confirmó que el proceso de inicio de sesión responde correctamente ante credenciales válidas, devolviendo un código de respuesta esperado.
+3. Se verifica que el flujo de autenticación completa todas las peticiones requeridas (envio de credenciales).
+4. El sistema respondió de forma consistente ante las múltiples ejecuciones consecutivas, sin errores de conexión ni fallos en el flujo de autenticación.
+5. La configuración del archivo .csv, ayuda a parametizar los datos de inicio de sesión de tal forma que sea sencillo para el usuario agregar o modificar la información de cada usuario que realiza el proceso dentro de Jmeter.
