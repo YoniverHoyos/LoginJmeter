@@ -1,7 +1,12 @@
 Conclusiones
 
-1. El objetivo inicial del desafio era realizar una prueba de carga del servicio de login en "https://fakestoreapi.com/auth/login", pero esto no fue posible debido a diversas dificultades, por lo que se opto por realizar la prueba de carga en una dirección diferente, "https://the-internet.herokuapp.com/login". Obteniendo los resultados deseados.
-2. La prueba confirmó que el proceso de inicio de sesión responde correctamente ante credenciales válidas, devolviendo un código de respuesta esperado.
-3. Se verifica que el flujo de autenticación completa todas las peticiones requeridas (envio de credenciales).
-4. El sistema respondió de forma consistente ante las múltiples ejecuciones consecutivas, sin errores de conexión ni fallos en el flujo de autenticación.
-5. La configuración del archivo .csv, ayuda a parametizar los datos de inicio de sesión de tal forma que sea sencillo para el usuario agregar o modificar la información de cada usuario que realiza el proceso dentro de Jmeter.
+1. El objetivo inicial del desafio era realizar una prueba de carga del servicio de login en "https://fakestoreapi.com/auth/login", pero esto no fue posible debido a diversas dificultades, por lo que se opto por realizar la prueba de carga en una dirección diferente, "https://the-internet.herokuapp.com/login". Obteniendo los reportes deseados que permitieron la creacion de la linea base en la ejecución de las pruebas.
+
+2. Se puede observar que el tiempo promedio de respuesta disminuyo de 135 ms a 125 ms al pasar de 30 a 150 usuarios, de igual forma, el pico máximo de tiempo disminuyo de 804 ms a 574 ms, lo que sugiere que el sistema no solo soporta gran cantidad de usuarios sin degradación en los tiempos de respuesta, sino que incluso responde mucho más rápido bajo mayor carga. Esto permite sugerir un backend eficiente y bien optimizado, con buena capacidad de procesamiento.
+
+3. El sistema muestra alta confiabilidad y estabilidad incluso con más usuarios simultáneos, observándose un 100% de éxito en las dos ejecuciones realizadas. Es posible observar respuestas exitosas con código HTTP 200, además de algunos códigos 302/303, redirecciones esperadas en este tipo de pruebas de autenticación, además de que no se observa ningún error 4xx o 5xx en la ejecución de ambas pruebas realizadas.  
+
+4. Al aumentar el número de hilos y peticiones totales, el throughput se incrementó de 31.8 a 154.1 req/s, lo que refleja un crecimiento lineal y proporcional en la cantidad de transacciones por segundo que el sistema ejecuta. Por lo tanto, se puede concluir que el servidor maneja correctamente una mayor carga de usuarios sin pérdida de rendimiento, sin evidenciar problemas de saturación o cuellos de botella. 
+
+5. La creación de reportes HTML a partir de archivos .jtl en JMeter es una práctica altamente efectiva para evaluar el rendimiento, estabilidad y escalabilidad de aplicaciones web, ya que permite convertir los datos técnicos de las pruebas de carga en información útil y presentable para cualquier persona involucrada en el proyecto, lo que facilita la creación de reportes y estrategias de mejora de rendimiento.
+
