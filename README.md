@@ -9,8 +9,8 @@ The repository contains a .jmx file created in JMeter 5.6.3, as well as a .csv f
 * Extract the .zip file to any desired location for working.
 * Navigate to the location of the ApacheJMeter.jar file, located at \apache-jmeter-5.6.3\bin\ApacheJMeter.jar
 * Run the ApacheJMeter.jar file using the Java platform. It is important to note that you must have a version of Java greater than 8 installed on your device. For example, JDK 21 was used for this repository, which can be downloaded for Windows at https://www.oracle.com/latam/java/technologies/downloads/#jdk21-windows.
-* Open the .jmx file using JMeter: File > Open, then browse to the file’s location, select the file, and click Open.
-* Configure the location of the .csv file in the “CSV Data Set Configuration” option. In the field where the file name is requested, enter the path where the DatosJmeter.csv file is located. 
+* Open the .jmx file using JMeter: File -> Open, then browse to the file’s location, select the file, and click Open.
+* Configure the location of the .csv file in the `CSV Data Set Configuration` option. In the field where the file name is requested, enter the path where the DatosJmeter.csv file is located. 
 * Before running the program, you must go to the “Threads” group and modify the number of threads to be used in each load test execution. Similarly, you must go to the simple data writer (ReportLogin) to change the location where the .jtl file for each execution will be generated. It is important to save this file, as it will be used to create the HTML report.
 
 ## Creating the HTML report:
