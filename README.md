@@ -2,7 +2,7 @@
 
 The repository contains a .jmx file created in JMeter 5.6.3, as well as a .csv file with the data parameters needed to perform a load test on the login service located at https://the-internet.herokuapp.com/login. Similarly, you will find two .jtl files generated from the execution of two load tests with 30 and 150 users for the login service. Additionally, there are two folders containing the HTML reports generated based on those .jtl files.
 
-## Ejecución del repositorio:
+## Respository execution:
 
 * Clone the repository by following the steps described by GitHub for cloning a repository that is not empty. These steps can be found in this documentation: https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository
 * Download JMeter 5.6.3, which can be done via this link: https://jmeter.apache.org/download_jmeter.cgi
